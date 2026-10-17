@@ -1,0 +1,207 @@
+/**
+ * Design Cart Cloud Timeline
+ * Code: design-cart-cloud-timeline
+ * Autor: Paweł Nosko — https://www.designcart.pl/pawel-nosko.html
+ * Firma: Design Cart — https://www.designcart.pl/
+ */
+
+.dcct-wrap > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+.dcct-flash {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.dcct-flash--ok {
+  background: rgba(31, 162, 140, 0.12);
+  color: #0d6b5c;
+  border: 1px solid rgba(31, 162, 140, 0.28);
+}
+
+.dc-page .dc-tiles {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)) !important;
+  gap: 0.9rem !important;
+}
+
+.dc-page .dc-tile {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0.7rem !important;
+  padding: 1.15rem 0.65rem !important;
+  text-decoration: none !important;
+  color: #262c38 !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  background: linear-gradient(145deg, #fafcfd 0%, #f8fafc 100%) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dc-page .dc-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.dc-page .dc-tile__icon {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  display: grid !important;
+  place-items: center !important;
+  color: #fff !important;
+  background: var(--tile-color, #1fa28c) !important;
+  font-size: 1.25rem !important;
+}
+
+.dc-page .dc-tile__label {
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  text-align: center !important;
+  color: #262c38 !important;
+}
+
+.dcct-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dcct-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fff;
+}
+
+.dcct-list__main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.dcct-list__title {
+  font-size: 1rem;
+  color: #262c38;
+}
+
+.dcct-list__shortcode {
+  display: inline-block;
+  font-size: 0.82rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.dcct-list__meta {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.dcct-list__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.dcct-media__preview {
+  min-height: 72px;
+  margin-bottom: 0.5rem;
+}
+
+.dcct-media__preview img {
+  display: block;
+  max-width: 160px;
+  max-height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.dcct-media__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.dcct-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.dcct-entry {
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: linear-gradient(180deg, #fff 0%, #f8fafc 100%);
+}
+
+.dcct-entry__head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.dcct-entry__handle {
+  cursor: grab;
+  color: #64748b;
+  padding: 0.25rem;
+}
+
+.dcct-entry__num {
+  margin-right: auto;
+  color: #262c38;
+}
+
+.dcct-entry-placeholder {
+  height: 120px;
+  border-radius: 14px;
+  border: 2px dashed rgba(31, 162, 140, 0.45);
+  background: rgba(31, 162, 140, 0.06);
+}
+
+.dc-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.dc-row--3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .dc-row--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WP editor inside DC card */
+.dcct-page .wp-editor-wrap {
+  margin-top: 0.35rem;
+}

@@ -1,0 +1,82 @@
+/**
+ * Design Cart Cloud Timeline
+ * Code: design-cart-cloud-timeline
+ * Autor: Paweł Nosko — https://www.designcart.pl/pawel-nosko.html
+ * Firma: Design Cart — https://www.designcart.pl/
+ */
+
+body.dcct-admin #wpcontent {
+  padding-left: 0;
+}
+
+body.dcct-admin #wpbody-content {
+  padding-bottom: 0;
+}
+
+body.dcct-admin .wrap.dcct-wrap {
+  margin: 0;
+  max-width: none;
+}
+
+body.dcct-admin .wrap.dcct-wrap > h1 {
+  display: none;
+}
+
+body.dcct-admin #wpbody-content > .notice,
+body.dcct-admin #wpbody-content > .updated,
+body.dcct-admin #wpbody-content > .error {
+  display: none !important;
+}
+
+.dcct-page {
+  min-height: calc(100vh - 32px);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(31, 162, 140, 0.14), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 95% 0%, rgba(28, 167, 202, 0.12), transparent 50%),
+    linear-gradient(180deg, #eef4f3 0%, #f1f5f9 100%);
+  padding-bottom: 3rem;
+}
+
+.dcct-page .dc-page__wrap {
+  padding-bottom: 2rem;
+}
+
+.dcct-page .dc-hero a {
+  text-decoration: none;
+}
+
+.dcct-page .dc-hero__bc a,
+.dcct-page .dc-hero a.dc-btn--ghost {
+  color: #fff !important;
+}
+
+.dcct-page .dc-hero__bc a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.dcct-page .dc-hero .dc-btn,
+.dcct-page .dc-form-card .dc-btn {
+  height: auto;
+  min-height: 0;
+  box-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.dcct-page .dc-hero .dc-btn--light,
+.dcct-page .dc-hero a.dc-btn--light {
+  color: var(--dc-brand-deep, #0d6b5c) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.dcct-page .dc-hero .dc-btn--light:hover,
+.dcct-page .dc-hero a.dc-btn--light:hover {
+  color: var(--dc-brand-deep, #0d6b5c) !important;
+  text-decoration: none;
+}
+
+.dcct-page .dc-form-card .dc-btn--primary {
+  box-shadow: 0 8px 24px var(--dc-brand-glow, rgba(31, 162, 140, 0.35));
+}
